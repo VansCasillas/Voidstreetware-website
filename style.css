@@ -1,0 +1,104 @@
+.nav {
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.nav-right {
+    font-size: 18px;
+}
+
+.nav :hover {
+    color: #8c52ff;
+}
+
+.homepage-image {
+    padding: 1rem;
+}
+
+.homepage::before {
+    width: 80vw;
+    height: 200px;
+    content: '';
+    background-image: linear-gradient(45deg, #1eaa46, pink);
+    position: absolute;
+    z-index: -1;
+    border-radius: 20% 30% 80% 10%;
+    filter: blur(90px);
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .homepage::before {
+        width: 90vw;
+        height: 150px;
+        top: 3%;
+        bottom: 10%;
+        border-radius: 50% 50% 30% 30%;
+        filter: blur(60px);
+    }
+}
+
+.box-style {
+    width: fit-content;
+    padding: 4px;
+    max-width: 100%;
+}
+
+.box-style-2 {
+    font-size: 12px;
+    font-weight: 600;
+    width: max-content;
+    padding: 3px;
+    max-width: 100%;
+}
+
+.box-style-3 {
+    font-size: 18px;
+    font-weight: 500;
+    width: max-content;
+    padding: 3px;
+    max-width: 100%;
+}
+
+.produk::-webkit-scrollbar {
+    display: none;
+}
+
+.nav-search {
+    position: relative;
+}
+
+.nav-search input {
+    width: 0;
+    opacity: 0;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.nav-search:hover input {
+    width: 150px;
+    /* lebar saat muncul */
+    opacity: 1;
+    padding: 0.25rem 0.5rem;
+    /* biar rapi pas muncul */
+}
+
+@keyframes fade-in-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in-down {
+    animation: fade-in-down 0.3s ease-out;
+}
