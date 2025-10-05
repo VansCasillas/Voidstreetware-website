@@ -25,7 +25,7 @@
     z-index: -1;
     border-radius: 20% 30% 80% 10%;
     filter: blur(90px);
-    top: 5%;
+    top: 7%;
     left: 50%;
     transform: translateX(-50%);
 }

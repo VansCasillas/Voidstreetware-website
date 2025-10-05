@@ -20,6 +20,7 @@ $cartCount = mysqli_fetch_assoc($cartCountQuery)['total'] ?? 0;
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="relative">
@@ -136,25 +137,43 @@ $cartCount = mysqli_fetch_assoc($cartCountQuery)['total'] ?? 0;
             </div>
         </nav>
 
+        <!-- scroll down section -->
+        <section class="min-h-screen flex flex-col items-center justify-center relative">
+            <!-- Teks Intro -->
+            <div class="text-center" data-aos="fade-up" data-aos-duration="1200">
+                <h1 class="text-3xl sm:text-4xl font-bold mb-4">Welcome</h1>
+                <p class="text-gray-600 text-sm sm:text-base max-w-md mx-auto">
+                    Temukan koleksi fashion terbaik dengan gaya modern & nyaman.
+                    Scroll ke bawah untuk mulai menjelajah!
+                </p>
+            </div>
 
-        <!-- homepage -->
-        <section class="min-h-screen grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+            <!-- Scroll Down Button -->
+            <a href="#homepage" id="scrollBtn"
+                class="absolute bottom-20 left-1/2 transform -translate-x-1/2 animate-bounce">
+                <i class="fa-solid fa-angles-down text-4xl"></i>
+            </a>
+        </section>
+
+
+        <!-- Homepage Section -->
+        <section id="homepage" class="homepage min-h-screen grid grid-cols-1 md:grid-cols-2 gap-6 items-center px-6">
             <!-- Gambar -->
-            <div class="homepage flex items-center justify-center p-6">
+            <div data-aos="zoom-in-up" data-aos-duration="1000" class="flex items-center justify-center">
                 <img src="image/download.png" alt="Jacket"
-                    class="max-h-[250px] sm:max-h-[350px] md:max-h-[400px] w-full max-w-xs sm:max-w-sm object-contain" />
+                    class="max-h-[300px] sm:max-h-[400px] md:max-h-[450px] object-contain" />
             </div>
 
             <!-- Teks -->
-            <div class="flex items-center justify-center p-6 sm:p-8">
-                <div class="text-center md:text-left max-w-lg">
-                    <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 leading-tight">
+            <div class="flex items-center justify-center">
+                <div class="text-center md:text-left max-w-lg" data-aos="fade-up" data-aos-duration="1200">
+                    <h1 class="text-3xl md:text-4xl font-bold mb-4 leading-tight">
                         TEMUKAN GAYAMU DISINI!
                     </h1>
-                    <p class="text-black font-semibold mb-6 text-sm sm:text-base md:text-lg">
+                    <p class="text-gray-700 font-medium mb-6 text-sm sm:text-base md:text-lg">
                         Jelajahi koleksi jaket terbaru kami yang nyaman dan stylish. Cocok untuk segala suasana, dari
-                        hangout santai hingga petualangan di luar ruangan. Dapatkan kualitas premium dengan desain
-                        modern yang membuatmu selalu tampil percaya diri.
+                        hangout santai hingga petualangan di luar ruangan. Dapatkan kualitas premium dengan desain modern
+                        yang membuatmu selalu tampil percaya diri.
                     </p>
                     <div class="flex justify-center md:justify-start">
                         <div class="box-style rounded-full bg-gradient-to-br from-black to-purple-700">
@@ -170,7 +189,7 @@ $cartCount = mysqli_fetch_assoc($cartCountQuery)['total'] ?? 0;
 
         <!-- jacket_section -->
         <section class="flex flex-col lg:flex-row p-4 sm:p-6 lg:p-8 gap-6 bg-gray-400">
-            <div class="w-full lg:w-2/5 rounded-md p-2 sm:p-4">
+            <div data-aos="fade-right" class="w-full lg:w-2/5 rounded-md p-2 sm:p-4">
                 <div class="flex flex-wrap gap-2">
                     <div class="box-style-2 rounded-full bg-gradient-to-br from-black to-purple-700">
                         <p class="p-[4px] px-3 bg-white rounded-full text-center">Jacket Section</p>
@@ -188,7 +207,7 @@ $cartCount = mysqli_fetch_assoc($cartCountQuery)['total'] ?? 0;
                         sampai acara formal.</p>
                 </div>
 
-                <div
+                <div data-aos="zoom-in-up"
                     class="box-style-3 rounded-full bg-gradient-to-br from-black to-purple-700 hover:bg-gradient-to-br hover:from-white">
                     <p class="p-[10px] px-6 bg-white rounded-full text-center hover:bg-black hover:text-white "><a
                             href="">Beli sekarang</a></p>
@@ -199,7 +218,7 @@ $cartCount = mysqli_fetch_assoc($cartCountQuery)['total'] ?? 0;
 
             <div class="produk w-full lg:w-3/5 flex flex-col overflow-y-auto max-h-screen pr-2">
 
-                <div
+                <div data-aos="zoom-out"
                     class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 px-4 sm:px-6 md:px-20 py-4 mb-4 rounded-md bg-white shadow-md">
                     <img src="image/jaket1.png" alt="Jacket" class="max-h-[200px] w-full sm:w-auto object-contain" />
                     <div class="pt-2 sm:pt-4">
@@ -210,7 +229,7 @@ $cartCount = mysqli_fetch_assoc($cartCountQuery)['total'] ?? 0;
                     </div>
                 </div>
 
-                <div
+                <div data-aos="zoom-in"
                     class="flex flex-col-reverse sm:flex-row items-center gap-4 sm:gap-6 px-4 sm:px-6 md:px-20 py-4 mb-4 rounded-md bg-white shadow-md">
                     <div class="pt-2 sm:pt-4">
                         <h1 class="text-xl sm:text-2xl font-bold mb-2 sm:mb-4">Jaket Sporty Black-White</h1>
@@ -222,7 +241,7 @@ $cartCount = mysqli_fetch_assoc($cartCountQuery)['total'] ?? 0;
                     <img src="image/jaket5.png" alt="Jacket" class="max-h-[200px] w-full sm:w-auto object-contain" />
                 </div>
 
-                <div
+                <div data-aos="zoom-out"
                     class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 px-4 sm:px-6 md:px-20 py-4 mb-4 rounded-md bg-white shadow-md">
                     <img src="image/jaket3.png" alt="Jacket" class="max-h-[200px] w-full sm:w-auto object-contain" />
                     <div class="pt-2 sm:pt-4">
@@ -266,7 +285,7 @@ $cartCount = mysqli_fetch_assoc($cartCountQuery)['total'] ?? 0;
 
         <!-- hoodie_section -->
         <section class="min-h-screen flex flex-col items-center px-4 md:px-0 sm:p-6 lg:p-8">
-            <div class="text-center w-full md:w-3/5 p-6 md:p-10">
+            <div data-aos="zoom-in" class="text-center w-full md:w-3/5 p-6 md:p-10">
                 <div class="box-style-2 rounded-full bg-gradient-to-br from-black to-purple-700 mb-4 inline-block">
                     <p class="p-[4px] px-3 bg-white rounded-full text-center">Hoodie Section</p>
                 </div>
@@ -279,7 +298,7 @@ $cartCount = mysqli_fetch_assoc($cartCountQuery)['total'] ?? 0;
 
             <div class="w-full md:w-4/5 space-y-6">
                 <!-- Konten 1 -->
-                <div
+                <div data-aos="fade-up-right"
                     class="flex flex-col md:flex-row items-center gap-6 px-4 md:px-10 py-4 rounded-md bg-gray-100 shadow-md">
                     <img src="image/__ORIGINAL___CHAMBRE_DE_LA_VAIN_BEDS_STAR_BLACK.png" alt="Jacket"
                         class="w-full max-w-[200px]" />
@@ -294,7 +313,7 @@ $cartCount = mysqli_fetch_assoc($cartCountQuery)['total'] ?? 0;
                 </div>
 
                 <!-- Konten 2 -->
-                <div
+                <div data-aos="fade-up-left"
                     class="flex flex-col-reverse md:flex-row items-center gap-6 px-4 md:px-10 py-4 rounded-md bg-gray-500 shadow-md">
                     <div class="pt-4 w-full">
                         <h1 class="text-white text-xl sm:text-2xl font-bold mb-2 sm:mb-4">Telepati - Hoodie Oversize
@@ -309,7 +328,7 @@ $cartCount = mysqli_fetch_assoc($cartCountQuery)['total'] ?? 0;
                 </div>
 
                 <!-- Konten 3 -->
-                <div
+                <div data-aos="fade-up-right"
                     class="flex flex-col md:flex-row items-center gap-6 px-4 md:px-10 py-4 rounded-md bg-gray-100 shadow-md">
                     <img src="image/Preface_Signature_Basic_Zip_Hoodie_Black.png" alt="Jacket"
                         class="w-full max-w-[200px]" />
@@ -412,6 +431,43 @@ $cartCount = mysqli_fetch_assoc($cartCountQuery)['total'] ?? 0;
         </section>
 
         <script src="script.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+
+            document.getElementById("scrollBtn").addEventListener("click", function(e) {
+                e.preventDefault();
+
+                const target = document.querySelector("#homepage");
+                const targetPosition = target.getBoundingClientRect().top + window.scrollY;
+                const startPosition = window.scrollY;
+                const distance = targetPosition - startPosition;
+                const duration = 1000;
+                let start = null;
+
+                function step(timestamp) {
+                    if (!start) start = timestamp;
+                    let progress = timestamp - start;
+                    let percent = Math.min(progress / duration, 1);
+
+                    // easing biar smooth (easeInOutQuad)
+                    let ease = percent < 0.5 ?
+                        2 * percent * percent :
+                        -1 + (4 - 2 * percent) * percent;
+
+                    window.scrollTo(0, startPosition + distance * ease);
+
+                    if (progress < duration) {
+                        window.requestAnimationFrame(step);
+                    }
+                }
+
+                window.requestAnimationFrame(step);
+
+                // hapus #homepage dari URL
+                history.replaceState(null, null, " ");
+            });
+        </script>
 
     </main>
     <footer class="bg-gray-400 text-center p-4 border-t text-white text-sm">
