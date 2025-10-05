@@ -16,7 +16,7 @@ $cartCount = mysqli_fetch_assoc($cartCountQuery)['total'] ?? 0;
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Voidstreetware</title>
-    <link rel="icon" href="resource/Voidstreetware_logo.png" type="image/png" />
+    <link rel="icon" href="image/Voidstreetware_logo.png" type="image/png" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
@@ -30,7 +30,7 @@ $cartCount = mysqli_fetch_assoc($cartCountQuery)['total'] ?? 0;
                 <!-- Logo -->
                 <div class="flex-1 text-center md:text-left">
                     <a href="index.php">
-                        <img src="resource/Voidstreetware.png" alt="Logo" class="h-10 mx-auto md:mx-0">
+                        <img src="image/Voidstreetware.png" alt="Logo" class="h-10 mx-auto md:mx-0">
                     </a>
                 </div>
 
@@ -141,7 +141,7 @@ $cartCount = mysqli_fetch_assoc($cartCountQuery)['total'] ?? 0;
         <section class="min-h-screen grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
             <!-- Gambar -->
             <div class="homepage flex items-center justify-center p-6">
-                <img src="resource/download.png" alt="Jacket"
+                <img src="image/download.png" alt="Jacket"
                     class="max-h-[250px] sm:max-h-[350px] md:max-h-[400px] w-full max-w-xs sm:max-w-sm object-contain" />
             </div>
 
@@ -201,7 +201,7 @@ $cartCount = mysqli_fetch_assoc($cartCountQuery)['total'] ?? 0;
 
                 <div
                     class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 px-4 sm:px-6 md:px-20 py-4 mb-4 rounded-md bg-white shadow-md">
-                    <img src="resource/jaket1.png" alt="Jacket" class="max-h-[200px] w-full sm:w-auto object-contain" />
+                    <img src="image/jaket1.png" alt="Jacket" class="max-h-[200px] w-full sm:w-auto object-contain" />
                     <div class="pt-2 sm:pt-4">
                         <h1 class="text-xl sm:text-2xl font-bold mb-2 sm:mb-4">Bomber Jacket</h1>
                         <p class="text-gray-600 text-sm sm:text-base">Jaket Bomber dengan desain clean dan detail
@@ -219,12 +219,12 @@ $cartCount = mysqli_fetch_assoc($cartCountQuery)['total'] ?? 0;
                             penuh, kerah tegak, serta karet elastis pada pergelangan tangan dan bagian bawah jaket,
                             cocok untuk tampilan kasual aktif.</p>
                     </div>
-                    <img src="resource/jaket5.png" alt="Jacket" class="max-h-[200px] w-full sm:w-auto object-contain" />
+                    <img src="image/jaket5.png" alt="Jacket" class="max-h-[200px] w-full sm:w-auto object-contain" />
                 </div>
 
                 <div
                     class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 px-4 sm:px-6 md:px-20 py-4 mb-4 rounded-md bg-white shadow-md">
-                    <img src="resource/jaket3.png" alt="Jacket" class="max-h-[200px] w-full sm:w-auto object-contain" />
+                    <img src="image/jaket3.png" alt="Jacket" class="max-h-[200px] w-full sm:w-auto object-contain" />
                     <div class="pt-2 sm:pt-4">
                         <h1 class="text-xl sm:text-2xl font-bold mb-2 sm:mb-4"> Jaket Hoodie Outdoor Navy-White</h1>
                         <p class="text-gray-600 text-sm sm:text-base">Jaket model windbreaker dengan kombinasi warna
@@ -243,13 +243,13 @@ $cartCount = mysqli_fetch_assoc($cartCountQuery)['total'] ?? 0;
                             serta kancing snap untuk perlindungan ekstra. Terdapat saku besar dengan penutup di sisi
                             depan, karet elastis di pergelangan tangan, dan penyesuaian tali di bagian bawah.</p>
                     </div>
-                    <img src="resource/jaket10.png" alt="Jacket"
+                    <img src="image/jaket10.png" alt="Jacket"
                         class="max-h-[200px] w-full sm:w-auto object-contain" />
                 </div>
 
                 <div
                     class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 px-4 sm:px-6 md:px-20 py-4 mb-4 rounded-md bg-white shadow-md">
-                    <img src="resource/jaket7.png" alt="Jacket" class="max-h-[200px] w-full sm:w-auto object-contain" />
+                    <img src="image/jaket7.png" alt="Jacket" class="max-h-[200px] w-full sm:w-auto object-contain" />
                     <div class="pt-2 sm:pt-4">
                         <h1 class="text-xl sm:text-2xl font-bold mb-2 sm:mb-4">Hooded Jacket</h1>
                         <p class="text-gray-600 text-sm sm:text-base">Jaket kasual warna beige polos dengan desain
@@ -281,7 +281,7 @@ $cartCount = mysqli_fetch_assoc($cartCountQuery)['total'] ?? 0;
                 <!-- Konten 1 -->
                 <div
                     class="flex flex-col md:flex-row items-center gap-6 px-4 md:px-10 py-4 rounded-md bg-gray-100 shadow-md">
-                    <img src="resource/__ORIGINAL___CHAMBRE_DE_LA_VAIN_BEDS_STAR_BLACK.png" alt="Jacket"
+                    <img src="image/__ORIGINAL___CHAMBRE_DE_LA_VAIN_BEDS_STAR_BLACK.png" alt="Jacket"
                         class="w-full max-w-[200px]" />
                     <div class="pt-4 w-full">
                         <h1 class="text-xl sm:text-2xl font-bold mb-2 sm:mb-4">CHMB - Zipper Hoodie Minimalist</h1>
@@ -305,13 +305,13 @@ $cartCount = mysqli_fetch_assoc($cartCountQuery)['total'] ?? 0;
                             seharian dengan vibe streetwear yang kuat.
                         </p>
                     </div>
-                    <img src="resource/TELEPATICHE_-_KISS_ME_WHITE.png" alt="Jacket" class="w-full max-w-[200px]" />
+                    <img src="image/TELEPATICHE_-_KISS_ME_WHITE.png" alt="Jacket" class="w-full max-w-[200px]" />
                 </div>
 
                 <!-- Konten 3 -->
                 <div
                     class="flex flex-col md:flex-row items-center gap-6 px-4 md:px-10 py-4 rounded-md bg-gray-100 shadow-md">
-                    <img src="resource/Preface_Signature_Basic_Zip_Hoodie_Black.png" alt="Jacket"
+                    <img src="image/Preface_Signature_Basic_Zip_Hoodie_Black.png" alt="Jacket"
                         class="w-full max-w-[200px]" />
                     <div class="pt-4 w-full">
                         <h1 class="text-xl sm:text-2xl font-bold mb-2 sm:mb-4">Preface - Pullover Hoodie Monochrome</h1>

@@ -154,7 +154,7 @@ $telpQuery = mysqli_query($koneksi, "SELECT no_telpon FROM user_alamat WHERE id_
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart - Voidstreetware</title>
-    <link rel="icon" href="resource/Voidstreetware_logo.png" type="image/png" />
+    <link rel="icon" href="image/Voidstreetware_logo.png" type="image/png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="style.css">
@@ -176,7 +176,7 @@ $telpQuery = mysqli_query($koneksi, "SELECT no_telpon FROM user_alamat WHERE id_
                 <!-- Logo -->
                 <div class="flex-1 text-center md:text-left">
                     <a href="index.php">
-                        <img src="resource/Voidstreetware.png" alt="Logo" class="h-10 mx-auto md:mx-0">
+                        <img src="image/Voidstreetware.png" alt="Logo" class="h-10 mx-auto md:mx-0">
                     </a>
                 </div>
 
